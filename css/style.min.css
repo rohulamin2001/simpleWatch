@@ -1,0 +1,55 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    background: url(../img/clock2.jpg) center no-repeat;
+    background-size: cover;
+    height: 100vh
+}
+
+.main-container {
+    margin: 0 auto;
+    width: 800px;
+    display: flex;
+    padding: 10em 0 5px 0;
+    font-family: "Roboto", sans-serif;
+    /* border-radius: 50% 50% 50% 50%/100% 100% 0% 0%; */
+    background: url(../img/blureGradient.jpg) center no-repeat;
+    background-size: cover;
+    border: 3px solid #272362
+}
+
+.main-container .container-item {
+    text-align: center;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: .5rem 0
+}
+
+.main-container .container-item:nth-child(1) {
+    border-radius: 25px 0 0 0
+}
+
+.main-container .container-item:nth-child(6) {
+    border-radius: 0 25px 0 0
+}
+
+.main-container .container-item:nth-child(even) {
+    flex: 1;
+    background-color: #077701
+}
+
+.main-container .container-item:nth-child(odd) {
+    flex: 1;
+    background-color: rgba(5, 10, 84, .9647058824)
+}
+@media screen and (max-width:800px) {
+    body{
+        display: none
+    } ;
+}
